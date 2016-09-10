@@ -11,4 +11,4 @@ A bookmarklet (tested only in Chrome) that, when run, will tell you how effectiv
 2. Run the bookmarklet.
 
 ### Screenshot
-![seasonal trading screenshot]("/screenshots/seasonalTrading.png")
+![seasonal trading screenshot](screenshots/seasonalTrading.png)
