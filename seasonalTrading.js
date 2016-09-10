@@ -4,7 +4,6 @@
   Author: Eric Putnam <putnam.eric@gmail.com>
   */
 
-javascript: (function() {
 
     var raceElements = document.getElementsByClassName('panelContainer');
     var season = document.getElementById('calendarDiv').textContent;
@@ -44,6 +43,8 @@ javascript: (function() {
     var statusBar = ' <style> .statusKeyItem {font-family: sans-serif; font-size: 14px; text-shadow: 1px 1px 0 #444; display: inline-block; height: 20px; width: 75px; border: solid #DE8D47 1px; border-radius:3px; text-align:center;} </style> <div id="statusKey" style="height:50px; display:block;"> <div class="statusKeyItem" style="background-color:' + colorHighest + '">Highest</div> <div class="statusKeyItem" style="background-color:' + colorHigh + '">High</div> <div class="statusKeyItem" style="background-color:' + colorAverage + '">Average</div> <div class="statusKeyItem" style="background-color:' + colorLow + '">Low</div> <div class="statusKeyItem" style="background-color:' + colorLowest + '">Lowest</div></div>';
 
 
+$('.tabsContainer a:nth-child(9)').click(function(){
+    
     $('<div id="placeholder"></div>').insertBefore('.expandAllBar');
     document.getElementById("placeholder").innerHTML = statusBar;
 
@@ -118,4 +119,5 @@ javascript: (function() {
         }
     }
 
-})()
+})
+
